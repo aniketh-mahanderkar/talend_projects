@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId></groupId>
+    <groupId>org.example.talend_demo_use_cases</groupId>
     <artifactId>code.Master</artifactId>
     <version>8.0.1</version>
     <relativePath>../../</relativePath>
   </parent>
-  <groupId>.code</groupId>
+  <groupId>org.example.talend_demo_use_cases.code</groupId>
   <artifactId>routines</artifactId>
   <version>8.0.1</version>
   <name>TALEND_DEMO_USE_CASES Routines</name>
@@ -18,6 +18,16 @@
     <codes.compile.failOnError>true</codes.compile.failOnError>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.13.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.13.2</version>
+    </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>antlr-runtime-3.5.2</artifactId>
@@ -47,6 +57,11 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>2.13.2</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
